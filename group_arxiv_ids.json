@@ -1,0 +1,4 @@
+var group_arxiv_ids = [
+        {"arxivId": "cubitt_t_1"},
+        {"arxivId": "lockhart_j_1"}
+];
