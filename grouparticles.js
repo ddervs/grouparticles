@@ -196,7 +196,7 @@ function makearXiv(feed)
 	    html += '\t</div>\n</dd>';
     }
 
-    html += '<br /><span id="authorid_hook" style="font-size:80%; padding-left:0px">[ This list is powered using <a href="https://arxiv.org/help/author_identifiers">arXiv author ids</a> and the <a href="https://arxiv.org/help/myarticles">myarticles</a> widget ]</span>';
+    html += '<br /><span id="authorid_hook" style="font-size:80%; padding-left:0px">[ This list is powered using <a href="https://arxiv.org/help/author_identifiers">arXiv author ids</a> and the <a href="https://github.com/ddervs/grouparticles">grouparticles</a> widget ]</span>';
     //close the arxiv container div
     html += '</dl>\n</div>\n'
     document.getElementById("arxivfeed").innerHTML=html;
@@ -232,7 +232,7 @@ function makePrettyarXiv(feed)
 	//Add a foooter div to hold the "powered by" link.
 	//html += '<div id="feedtitle" style="font-size:10px; padding-top:5px; padding-bottom:5px; text-align:center;">Powered by the arXiv.org <a href="https://arxiv.org/help/myarticles">myarticles</a> widget</div>';
 	html += '<div id="feedtitle" style="text-align:center; font-size:9px">';
-	html += '<a href="https://arxiv.org/help/myarticles">myarticles</a> is powered using <a href="https://arxiv.org/help/author_identifiers">arXiv author ids</a> data';
+	html += '<a href="https://github.com/ddervs/grouparticles">grouparticles</a> is powered using <a href="https://arxiv.org/help/author_identifiers">arXiv author ids</a> data';
 	html +='</div>';
 	//End the container div
 	html += "</div>"
