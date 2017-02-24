@@ -33,11 +33,16 @@ for (var key in group_arxiv_ids) {
 	}
 	checkID(arxiv_authorid);
 	var json_url = urlPrefix + arxiv_authorid + '.json';
+
 	if (typeof(feed) !== 'undefined') {
 		$.ajax({
 			   url: json_url,
 			   async: false,
 			   dataType: 'json',
+			   contentType: "application/json; charset=iso-8859-1",
+			   beforeSend: function(jqXHR) {
+	   			jqXHR.overrideMimeType('text/html;charset=iso-8859-1');
+				},
 			   success: function(data) {
 				   feed.entries = feed.entries.concat(data.entries);
 			   }
@@ -48,6 +53,10 @@ for (var key in group_arxiv_ids) {
 			   url: json_url,
 			   async: false,
 			   dataType: 'json',
+			   contentType: "application/json; charset=iso-8859-1",
+			   beforeSend: function(jqXHR) {
+	   			jqXHR.overrideMimeType('text/html;charset=iso-8859-1');
+				},
 			   success: function(data) {
 				   feed = data;
 			   }
