@@ -69,6 +69,14 @@ feed.entries.sort(function(a, b) {
 }
 );
 
+for(var i = 1; i < feed.entries.length; ){
+    if( feed.entries[i-1][date_to_sort_by] === feed.entries[i][date_to_sort_by]){
+        feed.entries.splice(i, 1);
+    } else {
+        i++;
+    }
+}
+
 newScript.innerText="jsonarXivFeed(feed)";
 
 headID.appendChild(newScript);
