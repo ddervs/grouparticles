@@ -13,6 +13,9 @@
 // without even the implied warranty of MERCHANTABILITY or FITNESS
 // FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
 //
+// You should have received a copy of GPL v3 in the same repo as 
+// this file, but if not, it can be found at https://www.gnu.org/licenses/gpl-3.0.txt
+//
 // As additional permission under GNU GPL version 3 section 7, you
 // may distribute non-source (e.g., minimized or compacted) forms of
 // that code without the copy of the GNU GPL normally required by
